@@ -11,7 +11,7 @@
 
 let city = 'Обнинск';
 let country = 'Россия';
-let population = '100000';
+let population = 100000;
 let stadium = true;
 
 /* 
@@ -80,15 +80,16 @@ console.log("randomNumber больше 20, и меньше 50");
     Условную конструкцию из задания 4, перепишите с помощью Switch Case
 */
 
-switch(randomNumber) {
-case 20 :
-console.log("randomNumber меньше 20");
-break;
-case 50 :
-console.log("randomNumber больше 50");
-break;
-default :
-console.log("randomNumber больше 20, и меньше 50");
+switch(true) {
+    case randomNumber < 20 :
+        console.log("randomNumber меньше 20");
+        break;
+    case randomNumber > 50 :
+        console.log("randomNumber больше 50");
+        break;
+    default :
+        console.log("randomNumber больше 20, и меньше 50");
+        break;
 }
 
 
