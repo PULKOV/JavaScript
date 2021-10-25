@@ -69,43 +69,15 @@ const array = [
     'Я остановился',
     'для закупки', 
     'что и было поручено Савельичу.',
-    'приехал,',
+    'приехал',
     'где должен был',
-    'нужных вещей',
+    'нужных вещей,',
     'отправился по лавкам',
     'пробыть сутки',
     'Савельич'
 ];
-
-const array2 = [
-    'я в Симбирск,',
-    'в трактире.',
-    'с утра',
-    'В ту же ночь',
-    'Я остановился',
-    'для закупки', 
-    'что и было поручено Савельичу.',
-    'приехал,',
-    'где должен был',
-    'нужных вещей',
-    'отправился по лавкам',
-    'пробыть сутки',
-    'Савельич'
-];
-array[0] = array2[3];
-array[1] = array2[7];
-array[2] = array2[0];
-array[3] = array2[8];
-array[4] = array2[11];
-array[5] = array2[5];
-array[6] = array2[9];
-array[7] = array2[6];
-array[8] = array2[4];
-array[9] = array2[1];
-array[10] = array2[12];
-array[11] = array2[2];
-array[12] = array2[10];
-console.log(array.join(' '));
+let result = array[3] + ' ' + array[7] + ' ' + array[0] + ' ' + array[8] + ' ' +  array[11] + ' ' + array[5] + ' ' + array[9] + ' ' + array[6] + ' ' + array[4] + ' ' + array[1] + ' ' + array[12] + ' ' + array[2] + ' ' + array[10];
+console.log(result);
 
 /* 
     Задание 4:
@@ -120,14 +92,11 @@ console.log(array.join(' '));
     При вызове функции передайте ей, в качестве аргумента, свое имя и фамилию.
 */
 
-const firstName = "Никита";
-const lastName = "Пульков";
-
-const showName = () => {
+const showName = (firstName, lastName) => {
     const fullName = `${firstName} ${lastName}`;
     console.log(fullName);
 };
-showName();
+showName('Никита', 'Пульков');
 
 /* 
     Задание 5:
